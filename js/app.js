@@ -97,3 +97,14 @@ function randomQuote() {
 //9. Unlock the Secret to Financial Freedom
 /*Create an event listener that will show and hide the message when clickig on the button.
 */
+var moneyAdd = document.getElementById("showHide");
+moneyAdd.addEventListener("click",showMoney);
+
+function showMoney() {
+  var secretLoc = document.getElementById("showmoney");
+  if(secretLoc.style.display === "none") {
+  secretLoc.style.display = "block";
+  } else {
+    secretLoc.style.display = "none";
+  }
+}
